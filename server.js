@@ -8,7 +8,7 @@ app.use(express.static(_dirname));
 //routes
 
 app.get("/", function(req, res) {
-    res.render("index");
+    res.render("quotemachine.html");
 })
 
 app.listen(port, function() {
