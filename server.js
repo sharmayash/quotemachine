@@ -3,7 +3,7 @@ var app = express();
 
 //set the port 
 var port = process.env.PORT || 5000
-app.use(express.static(_dirname));
+app.use(express.static(_dirname + "/public"));
 
 //routes
 
@@ -12,5 +12,5 @@ app.get("/", function(req, res) {
 })
 
 app.listen(port, function() {
-    console.log("app is satrted")
+    console.log("app is started");
 })
