@@ -8,7 +8,7 @@ app.use(favicon(_dirname + '/public/favicon.ico'));
 //routes
 
 app.get("/", function(req, res) {
-    res.render("quotemachine.html");
+    res.render("index");
 })
 
 app.listen(port, function() {
